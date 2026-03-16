@@ -50,7 +50,20 @@ export function Footer() {
 
           {/* Identity line */}
           <p className="font-mono text-[0.65rem] text-foreground-quaternary tracking-wider uppercase">
-            Mohamed Dawoud · UC Santa Cruz · {year}
+            Ramon Torres · UC Santa Cruz · {year}
+          </p>
+
+          {/* Template credit */}
+          <p className="font-mono text-[0.6rem] text-foreground-quaternary">
+            Design based on a template by{" "}
+            <a
+              href="https://github.com/MoMoDawoud/momodawoud.github.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent transition-colors duration-150"
+            >
+              Mohamed Dawoud
+            </a>
           </p>
         </div>
       </div>

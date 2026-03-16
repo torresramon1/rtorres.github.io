@@ -33,43 +33,40 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Mohamed Dawoud | Security & Privacy Researcher",
-    template: "%s | Mohamed Dawoud",
+    default: "Ramon Torres | Security & Privacy Researcher",
+    template: "%s | Ramon Torres",
   },
   description:
     "PhD Student in Computer Science at UC Santa Cruz, researching human-centered security and privacy. Exploring cybercrime ecosystems, Android malware, and security education.",
   keywords: [
-    "Mohamed Dawoud",
-    "Mohamed Moustafa Dawoud",
+    "Ramon Torres",
     "Security Research",
     "Privacy",
     "PhD Student",
     "UC Santa Cruz",
     "Cybersecurity",
     "Computer Science",
-    "Human-Centered Security",
-    "AI Governance",
   ],
-  authors: [{ name: "Mohamed Moustafa Dawoud" }],
-  creator: "Mohamed Moustafa Dawoud",
-  metadataBase: new URL("https://momodawoud.github.io"),
+  authors: [{ name: "Ramon Torres" }],
+  creator: "Ramon Torres",
+  metadataBase: new URL("https://ramontorres.github.io"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://momodawoud.github.io",
-    title: "Mohamed Dawoud | Security & Privacy Researcher",
+    url: "https://ramontorres.github.io",
+    title: "Ramon Torres | Security & Privacy Researcher",
     description:
       "PhD Student in Computer Science at UC Santa Cruz, researching human-centered security and privacy.",
-    siteName: "Mohamed Dawoud",
+    siteName: "Ramon Torres",
     images: [
       {
-        url: "/og-image.png",
+        url: "/profile_pic.jpeg",
         width: 1200,
         height: 630,
-        alt: "Mohamed Dawoud - Security & Privacy Researcher at UC Santa Cruz",
+        alt: "Ramon Torres - Security & Privacy Researcher at UC Santa Cruz",
       },
     ],
   },
@@ -107,7 +104,7 @@ export default function RootLayout({
         <PersonJsonLd />
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem
         >
           <a

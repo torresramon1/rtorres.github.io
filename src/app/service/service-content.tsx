@@ -2,44 +2,39 @@
 
 import { FadeIn } from "@/components/animations/fade-in";
 import { PageHeader } from "@/components/page-header";
+import { siteConfig } from "@/data/site-config";
 
+// TODO: Add your community building activities.
 const communityBuilding = [
   {
-    role: "Co-founder, Egyptians in CS Research",
-    org: "egyptians-in-cs.github.io",
-    year: "2026",
-    link: "https://egyptians-in-cs.github.io",
-    description:
-      "Community directory of 262 Egyptian computer science researchers across 16 research tracks worldwide. Originally created by Badr AlKhamissi as Egyptians in AI Research, I reached out and we started collaborating — expanding it beyond AI to include all of computer science: security, systems, theory, HCI, and more. The goal is simple: show students from non-traditional paths that frontier research is real, possible, and within reach.",
-    blogLink: "https://medium.com/p/b8e5f358c559",
+    role: "YOUR_ROLE", // TODO: e.g. "Founder, Example Research Community"
+    org: "YOUR_ORG_URL_OR_NAME", // TODO: e.g. "example-community.github.io"
+    year: "YYYY",
+    link: "https://YOUR_COMMUNITY_URL", // TODO: remove field if no link
+    description: "YOUR_DESCRIPTION", // TODO: what the community is and your role in it
+    blogLink: "https://YOUR_BLOG_POST_LINK", // TODO: remove field if no blog post
   },
 ];
 
+// TODO: Add your advocacy and policy activities.
 const advocacyAndPolicy = [
   {
-    role: "AAAS CASE Workshop Delegate",
-    org: "Washington, D.C.",
-    year: "2025",
-    description:
-      "One of four graduate students selected to represent Dartmouth College at the AAAS Catalyzing Advocacy in Science and Engineering Workshop; engaged with policymakers on science, technology, and public policy.",
-  },
-  {
-    role: "Conference Volunteer",
-    org: "IEEE Secure Development Conference (SecDev)",
-    year: "2023",
-    description:
-      "Supported session logistics and attendee coordination at IEEE SecDev 2023, Atlanta, GA.",
+    role: "YOUR_ADVOCACY_ROLE", // TODO: e.g. "Workshop Delegate"
+    org: "YOUR_ORG", // TODO: e.g. "City, State" or "Organization Name"
+    year: "YYYY",
+    description: "YOUR_DESCRIPTION",
   },
 ];
 
+// TODO: Add your mentees. Remove the whole mentees section below if unused.
 const mentees = [
   {
-    name: "Faris H. Rizk",
-    role: "Undergraduate Researcher & Research Lead at Brownian Labs",
-    institution: "Delta Higher Institute for Engineering and Technology, Egypt",
-    focus: "Interpretable computer vision, generative models, vision-language learning",
-    link: "https://faris-hamdi.github.io",
-    cycle: "2025–2026",
+    name: "MENTEE_NAME", // TODO: e.g. "Jane Doe"
+    role: "MENTEE_ROLE", // TODO: e.g. "Undergraduate Researcher"
+    institution: "MENTEE_INSTITUTION", // TODO: e.g. "Example University"
+    focus: "MENTEE_RESEARCH_FOCUS", // TODO: e.g. "Computer Vision"
+    link: "https://MENTEE_WEBSITE", // TODO: remove field if no website
+    cycle: "YYYY–YYYY", // TODO: mentorship period e.g. "2024–2025"
   },
 ];
 
@@ -138,16 +133,13 @@ export function ServiceContent() {
               Mentorship
             </h2>
             <div className="space-y-4 text-sm text-foreground-secondary leading-relaxed max-w-prose">
+              {/* TODO: Replace with your own mentorship description */}
               <p>
-                I enjoy mentoring students at different stages of their academic journey. Each
-                application cycle, I work with prospective graduate applicants on statements of
-                purpose, research statements, CVs, program selection, and overall application
-                strategy. I also advise undergraduates exploring research for the first time and
-                students navigating career decisions in academia and beyond.
+                YOUR_MENTORSHIP_DESCRIPTION
               </p>
               <p className="text-foreground-tertiary text-xs">
                 If you think I can help, feel free to{" "}
-                <a href="mailto:mdawoud@ucsc.edu" className="link-accent">
+                <a href={`mailto:${siteConfig.email}`} className="link-accent">
                   reach out
                 </a>
                 .
@@ -165,14 +157,18 @@ export function ServiceContent() {
                 >
                   <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-1">
                     <h4 className="text-sm font-medium text-foreground">
-                      <a
-                        href={mentee.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link-accent"
-                      >
-                        {mentee.name}
-                      </a>
+                      {mentee.link ? (
+                        <a
+                          href={mentee.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="link-accent"
+                        >
+                          {mentee.name}
+                        </a>
+                      ) : (
+                        mentee.name
+                      )}
                     </h4>
                     <span className="font-mono text-xs text-foreground-quaternary">
                       {mentee.cycle}

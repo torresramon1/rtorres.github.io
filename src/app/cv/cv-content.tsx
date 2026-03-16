@@ -7,133 +7,57 @@ import { PageHeader } from "@/components/page-header";
 import { FadeIn, StaggerChildren, StaggerItem } from "@/components/animations/fade-in";
 import { siteConfig } from "@/data/site-config";
 
+// TODO: Fill in your education history. Add or remove objects as needed.
 const education = [
   {
-    degree: "Ph.D. in Computer Science & Engineering",
-    institution: "University of California, Santa Cruz",
-    period: "Jun 2025 - Present",
-    advisor: "Prof. Ramakrishnan (Ram) Sundara Raman",
-    focus: "Human-Centered Security, Privacy, and Responsible AI",
-  },
-  {
-    degree: "M.S. in Computer Science & Engineering",
-    institution: "University of California, Santa Cruz",
-    period: "Jun 2025 - Mar 2026",
-    advisor: "Prof. Ramakrishnan (Ram) Sundara Raman",
-    focus: "Thesis committee: Prof. Ram Sundara Raman (Chair), Prof. Alvaro A. Cardenas, Prof. David T. Lee, Dr. Alejandro Cuevas",
-  },
-  {
-    degree: "B.Sc. in Informatics and Computer Science",
-    institution: "German International University (GIU), Cairo",
-    period: "Apr 2021 - Jul 2024",
-    advisor: null,
-    focus: "Excellent with High Honors · Major: Information Security · Full Merit Scholarship",
+    degree: "YOUR_DEGREE", // TODO: e.g. "Ph.D. in Computer Science"
+    institution: "YOUR_INSTITUTION", // TODO: e.g. "University of Example"
+    period: "YYYY - Present", // TODO: e.g. "Sep 2022 - Present"
+    advisor: "YOUR_ADVISOR", // TODO: e.g. "Prof. Jane Doe" — set to null if no advisor
+    focus: "YOUR_FOCUS", // TODO: e.g. "Machine Learning & Computer Vision"
   },
 ];
 
+// TODO: Fill in your work/research experience. Add or remove objects as needed.
 const experience = [
   {
-    title: "Graduate Student Researcher",
-    organization: "University of California, Santa Cruz",
-    period: "Jun 2025 - Present",
-    location: "Santa Cruz, CA",
-    description:
-      "Research on human-centered security, privacy, and AI governance under Prof. Ram Sundara Raman. Leading the AI Privacy & Regulation Study with Stanford University.",
-  },
-  {
-    title: "Graduate Teaching Assistant",
-    organization: "Dartmouth College",
-    period: "Jan 2025 - Jun 2025",
-    location: "Hanover, NH",
-    description:
-      "Lead GTA for COSC 55: Security & Privacy. Designed AI-integrated teaching model with oral evaluations for 28 students.",
-  },
-  {
-    title: "Research Associate",
-    organization: "Mohamed bin Zayed University of AI (MBZUAI)",
-    period: "Sep 2024 - Dec 2024",
-    location: "Abu Dhabi, UAE",
-    description:
-      "Research on combating deepfakes and responsible AI. Investigated user mental models with AI-generated content.",
-  },
-  {
-    title: "Research Intern",
-    organization: "Georgia Institute of Technology",
-    period: "Oct 2023 - Feb 2024",
-    location: "Atlanta, GA",
-    description:
-      "Systems security research under Prof. Brendan D. Saltaformaggio. Contributed to USENIX Security 2024 publication.",
-  },
-  {
-    title: "Undergraduate Research Assistant",
-    organization: "University of South Florida",
-    period: "Jan 2023 - Aug 2023",
-    location: "Remote",
-    description:
-      "Cybercrime research with Prof. C. Jordan Howell on RaaS marketplaces. Published in Computers in Human Behavior.",
-  },
-  {
-    title: "Information Security Intern",
-    organization: "The German University in Cairo (GUC)",
-    period: "Sep 2021 - Jan 2023",
-    location: "Cairo, Egypt",
-    description:
-      "Applied security research on cryptography and IoT/IoMT security under Prof. Wassim Alexan. Published multiple papers.",
+    title: "YOUR_ROLE", // TODO: e.g. "Research Intern"
+    organization: "YOUR_ORGANIZATION", // TODO: e.g. "Example Lab"
+    period: "Mon YYYY - Mon YYYY", // TODO: e.g. "Jun 2023 - Aug 2023"
+    location: "YOUR_LOCATION", // TODO: e.g. "City, ST" — remove field if remote
+    description: "YOUR_DESCRIPTION", // TODO: brief description of your responsibilities/contributions
   },
 ];
 
+// TODO: Fill in your talks and presentations. Add or remove objects as needed.
 const presentations = [
   {
-    title: "AI-Enabled NSFW Deepfakes on Fiverr",
-    event: "USEC 2026 (co-located with NDSS 2026)",
-    location: "San Diego, CA",
-    year: "2026",
-    type: "Workshop Talk",
+    title: "YOUR_TALK_TITLE", // TODO: paper or talk title
+    event: "YOUR_EVENT", // TODO: e.g. "NeurIPS 2024"
+    location: "YOUR_LOCATION", // TODO: e.g. "Vancouver, Canada"
+    year: "2024", // TODO: year
+    type: "YOUR_TYPE", // TODO: e.g. "Conference Talk" or "Workshop Talk" or "Poster"
   },
 ];
 
+// TODO: Fill in current/ongoing projects. Add or remove objects as needed.
 const ongoingProjects = [
   {
-    title: "AI Privacy & Regulation Study",
-    collaborators: "UC Santa Cruz (RANDLab) & Stanford University",
-    description:
-      "Qualitative study examining how practitioners navigate privacy challenges and emerging regulations (EU AI Act, CCPA, GDPR) when building and deploying AI products. Conducting confidential interviews with professionals across privacy, compliance, engineering, and risk roles.",
-    link: "https://randlab.engineering.ucsc.edu/aigov-study/",
+    title: "YOUR_PROJECT_TITLE", // TODO: project name
+    collaborators: "YOUR_COLLABORATORS", // TODO: e.g. "Example University & Partner Org"
+    description: "YOUR_PROJECT_DESCRIPTION", // TODO: what the project is about
+    link: "https://YOUR_PROJECT_URL", // TODO: project page URL — remove field if none
   },
 ];
 
+// TODO: Fill in your service and outreach. Add or remove objects as needed.
 const service = [
   {
-    title: "Co-founder & Lead Maintainer, Egyptians in CS Research",
-    organization: "egyptians-in-cs.github.io",
-    year: "2026",
-    description: "Community directory of 262 Egyptian computer science researchers across 16 research tracks worldwide. Expanded scope from AI to all of CS in collaboration with the original creator Badr AlKhamissi.",
-    link: "https://egyptians-in-cs.github.io",
-  },
-  {
-    title: "AAAS CASE Workshop Delegate",
-    organization: "Washington, D.C.",
-    year: "2025",
-    description: "One of four graduate students selected to represent Dartmouth College at the AAAS Catalyzing Advocacy in Science and Engineering Workshop; engaged with policymakers on science, technology, and public policy.",
-  },
-  {
-    title: "Conference Volunteer",
-    organization: "IEEE Secure Development Conference (SecDev)",
-    year: "2023",
-    description: "Supported session logistics and attendee coordination at IEEE SecDev 2023, Atlanta, GA.",
-  },
-  {
-    title: "PhD Application Mentorship",
-    organization: "Ongoing",
-    year: "Ongoing",
-    description: "Mentor a select cohort of prospective PhD applicants in Computer Science and related fields each application cycle. Provide personalized feedback on application materials (SoP, research statements, CVs), help define research focus and target programs, and advise on overall application strategy.",
-  },
-  {
-    title: "Dartmouth Guarini School Student Spotlight",
-    organization: "Dartmouth College",
-    year: "2025",
-    description: "Featured by Dartmouth's Guarini School of Graduate and Advanced Studies, discussing research in human-centered security and privacy, the journey from Zefta, Egypt to Dartmouth, and advocacy for international students in STEM policy.",
-    link: "https://guarinigrad.dartmouth.edu/blog/2025/04/28/student-spotlight-mohamed-moustafa-dawoud/",
+    title: "YOUR_SERVICE_ROLE", // TODO: e.g. "Program Committee Member, USENIX Security 2025"
+    organization: "YOUR_ORG", // TODO: e.g. "USENIX"
+    year: "2025", // TODO: year
+    description: "YOUR_SERVICE_DESCRIPTION", // TODO: brief description
+    link: "https://YOUR_SERVICE_URL", // TODO: remove field if no link
   },
 ];
 
@@ -149,7 +73,7 @@ export function CVContent() {
   return (
     <div className="pt-20 pb-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <PageHeader title="Curriculum Vitae" description="Last updated: March 2026">
+        <PageHeader title="Curriculum Vitae" description="Last updated: TODO_MONTH YYYY"> {/* TODO: update date */}
           <div className="flex gap-2 mt-4 print:hidden">
             <Button size="sm" onClick={() => window.print()}>
               <Download className="mr-2 h-4 w-4" />
@@ -187,8 +111,9 @@ export function CVContent() {
                 {siteConfig.email}
               </a>
               <span>{siteConfig.location.city}</span>
-              <a href="https://momodawoud.github.io" className="link-accent">
-                momodawoud.github.io
+              {/* TODO: update or remove this website link */}
+              <a href="https://YOUR_WEBSITE_URL" className="link-accent">
+                YOUR_WEBSITE_URL
               </a>
             </div>
           </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTheme } from "next-themes";
 import { useReducedMotion } from "framer-motion";
 
@@ -8,9 +8,14 @@ export function CursorGlow() {
   const glowRef = useRef<HTMLDivElement>(null);
   const { resolvedTheme } = useTheme();
   const prefersReducedMotion = useReducedMotion();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    if (prefersReducedMotion || resolvedTheme !== "dark") return;
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted || prefersReducedMotion || resolvedTheme !== "dark") return;
 
     const glow = glowRef.current;
     if (!glow) return;
@@ -42,7 +47,7 @@ export function CursorGlow() {
     };
   }, [resolvedTheme, prefersReducedMotion]);
 
-  if (prefersReducedMotion || resolvedTheme !== "dark") return null;
+  if (!mounted || prefersReducedMotion || resolvedTheme !== "dark") return null;
 
   return (
     <div

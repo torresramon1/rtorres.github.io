@@ -1,6 +1,8 @@
-# Mohamed Dawoud - Academic Portfolio
+# Ramon Torres - Academic Portfolio
 
 A modern academic portfolio website built with Next.js 14, Tailwind CSS, and Framer Motion.
+
+> Based on the template by [Mohamed Dawoud](https://github.com/MoMoDawoud/momodawoud.github.io)
 
 ## Tech Stack
 
@@ -104,7 +106,7 @@ src/
 - **Site config**: Edit `src/data/site-config.ts` for personal information
 - **Content**: Edit components in `src/components/sections/`
 - **Styling**: Modify `src/app/globals.css` for theme colors
-- **Profile photo**: Replace `public/profile.jpg`
+- **Profile photo**: Replace `public/profile_pic.jpeg`
 
 ## License
 

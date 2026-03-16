@@ -3,23 +3,24 @@
 import { FadeIn } from "@/components/animations/fade-in";
 import { PageHeader } from "@/components/page-header";
 
+// TODO: Add your fellowships, awards, and scholarships here.
 const fellowships = [
   {
-    year: "2021–2024",
-    title: "Full Merit Scholarship",
-    org: "German International University, Cairo",
-    detail: "Full tuition scholarship for B.Sc. in Informatics and Computer Science with a specialization in Information Security. Awarded for ranking 18th out of 600,000+ students nationwide in Egypt's Thanawya Amma mathematics exam (408/410, 99.51%).",
+    year: "YYYY–YYYY", // TODO: e.g. "2021–2024"
+    title: "YOUR_AWARD_TITLE", // TODO: e.g. "NSF Graduate Research Fellowship"
+    org: "YOUR_AWARDING_ORG", // TODO: e.g. "National Science Foundation"
+    detail: "YOUR_AWARD_DETAIL", // TODO: brief description of the award and criteria
   },
 ];
 
+// TODO: Add press coverage, features, spotlights, etc. Remove section if unused.
 const mediaCoverage = [
   {
-    date: "Apr 2025",
-    title: "Student Spotlight: Mohamed Moustafa Dawoud",
-    outlet: "Dartmouth Guarini School of Graduate and Advanced Studies",
-    description:
-      "Featured discussing research in human-centered security and privacy, the journey from Zefta, Egypt to Dartmouth, and advocacy for international students in STEM policy.",
-    link: "https://guarinigrad.dartmouth.edu/blog/2025/04/28/student-spotlight-mohamed-moustafa-dawoud/",
+    date: "Mon YYYY", // TODO: e.g. "Apr 2025"
+    title: "YOUR_MEDIA_TITLE", // TODO: article or feature title
+    outlet: "YOUR_MEDIA_OUTLET", // TODO: e.g. "Example University News"
+    description: "YOUR_MEDIA_DESCRIPTION", // TODO: brief summary
+    link: "https://YOUR_MEDIA_LINK", // TODO: link to the article — remove field if none
   },
 ];
 
@@ -36,7 +37,7 @@ export function RecognitionContent() {
         <FadeIn direction="none">
           <section className="mb-16">
             <h2 className="font-serif text-xl font-semibold tracking-tight mb-6 pb-2 border-b border-border">
-              Fellowships
+              Fellowships & Awards
             </h2>
             <div className="space-y-4">
               {fellowships.map((item, i) => (

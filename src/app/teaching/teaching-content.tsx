@@ -1,21 +1,21 @@
 "use client";
 
-import Image from "next/image";
 import { FadeIn } from "@/components/animations/fade-in";
 import { PageHeader } from "@/components/page-header";
+import { siteConfig } from "@/data/site-config";
 
+// TODO: Add your courses here. Add or remove objects as needed.
 const courses = [
   {
-    semester: "Spring 2025",
-    role: "Lead Graduate Teaching Assistant",
-    code: "COSC 55",
-    title: "Security & Privacy",
-    institution: "Dartmouth College",
-    instructor: "Prof. Sami Saydjari",
+    semester: "YOUR_SEMESTER", // TODO: e.g. "Spring 2025"
+    role: "YOUR_ROLE", // TODO: e.g. "Lead Graduate Teaching Assistant" or "Instructor"
+    code: "YOUR_COURSE_CODE", // TODO: e.g. "CS 101"
+    title: "YOUR_COURSE_TITLE", // TODO: e.g. "Introduction to Programming"
+    institution: "YOUR_INSTITUTION", // TODO: e.g. "University of Example"
+    instructor: "YOUR_INSTRUCTOR", // TODO: e.g. "Prof. Jane Doe" — remove field if you were the instructor
     highlights: [
-      "Designed AI-integrated teaching model with oral evaluations for 28 students",
-      "Full ownership of lab design, grading, and weekly 1-on-1 check-ins",
-      "Created project-based curriculum embracing AI tools while demanding understanding",
+      "YOUR_HIGHLIGHT_1", // TODO: bullet point describing what you did or taught
+      "YOUR_HIGHLIGHT_2",
     ],
   },
 ];
@@ -46,9 +46,11 @@ export function TeachingContent() {
                 <p className="text-sm text-foreground-secondary mb-1">
                   {course.role} — {course.institution}
                 </p>
-                <p className="font-mono text-xs text-foreground-quaternary mb-3">
-                  Instructor: {course.instructor}
-                </p>
+                {course.instructor && (
+                  <p className="font-mono text-xs text-foreground-quaternary mb-3">
+                    Instructor: {course.instructor}
+                  </p>
+                )}
                 <ul className="space-y-1.5 text-sm text-foreground-secondary">
                   {course.highlights.map((h, i) => (
                     <li key={i} className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-foreground-quaternary">
@@ -61,20 +63,6 @@ export function TeachingContent() {
           </section>
         </FadeIn>
 
-        {/* Course Photo */}
-        <FadeIn direction="none" delay={0.05}>
-          <div className="rounded-lg overflow-hidden mb-16 border border-border">
-            <Image
-              src="/prof_sami.jpg"
-              alt="Teaching session with Prof. Sami Saydjari at Dartmouth"
-              width={1200}
-              height={800}
-              className="w-full h-auto"
-              priority
-            />
-          </div>
-        </FadeIn>
-
         {/* Teaching Philosophy */}
         <FadeIn direction="none" delay={0.1}>
           <section className="mb-16">
@@ -82,63 +70,35 @@ export function TeachingContent() {
               Teaching Philosophy
             </h2>
             <div className="space-y-4 text-sm text-foreground-secondary leading-relaxed max-w-prose">
+              {/* TODO: Replace with your own teaching philosophy */}
               <p>
-                I believe AI is reshaping how students learn — and our teaching must evolve with it. Instead of pretending students aren&apos;t using tools like ChatGPT and GitHub Copilot, I redesigned part of the course to embrace AI coding assistants while holding students to a higher standard of understanding.
+                YOUR_TEACHING_PHILOSOPHY_PARAGRAPH_1
               </p>
               <p>
-                Students had full freedom in system design. AI tools were allowed — but used mindfully. Every week, I met each student or team for oral check-ins to probe real understanding. Each project ended with a final oral evaluation. If you used AI, great — but you had to explain, justify, and defend your choices.
+                YOUR_TEACHING_PHILOSOPHY_PARAGRAPH_2
               </p>
             </div>
 
-            {/* Student Quote */}
+            {/* TODO: Replace with a real student quote, or remove this block */}
             <div className="my-10 py-8 px-6 text-center">
               <blockquote className="font-serif italic text-lg sm:text-xl text-foreground-secondary mb-4 max-w-lg mx-auto">
-                &ldquo;This is the best way to force real understanding. I wish more courses at Dartmouth did this.&rdquo;
+                &ldquo;YOUR_STUDENT_QUOTE&rdquo;
               </blockquote>
               <p className="font-mono text-xs text-foreground-quaternary tracking-wide">
-                — Student feedback, final oral evaluation
+                — YOUR_QUOTE_ATTRIBUTION {/* TODO: e.g. "Student feedback, Spring 2025" */}
               </p>
             </div>
           </section>
         </FadeIn>
 
-        {/* Photos */}
-        <FadeIn direction="none" delay={0.15}>
-          <div className="space-y-6 mb-16">
-            <div className="rounded-lg overflow-hidden border border-border">
-              <Image
-                src="/teaching_2.jpg"
-                alt="Lab session with students at Dartmouth"
-                width={1200}
-                height={900}
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="rounded-lg overflow-hidden border border-border">
-              <Image
-                src="/teaching_1.jpg"
-                alt="Classroom discussion at Dartmouth"
-                width={1200}
-                height={900}
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
-        </FadeIn>
-
         {/* CTA */}
         <FadeIn direction="none" delay={0.2}>
           <div className="flex flex-col sm:flex-row items-center gap-4 text-sm">
+            {/* TODO: Update this link or remove it */}
             <a
-              href="https://www.linkedin.com/posts/mohamedmostafadawod_cybersecurity-aiineducation-privacy-activity-7338998254958764035-AywP"
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`mailto:${siteConfig.email}`}
               className="link-accent font-medium"
             >
-              Read my LinkedIn reflection &rarr;
-            </a>
-            <span className="text-foreground-quaternary">&middot;</span>
-            <a href="mailto:mdawoud@ucsc.edu" className="link-accent font-medium">
               Discuss collaboration
             </a>
           </div>
