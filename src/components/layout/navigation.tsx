@@ -5,8 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
-import { Menu, X, Sun, Moon, Search } from "lucide-react";
-import { GlobalSearch } from "@/components/global-search";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { Magnetic } from "@/components/interactive/magnetic";
 import { siteConfig } from "@/data/site-config";
 import { cn } from "@/lib/utils";
@@ -132,13 +131,6 @@ export function Navigation() {
 
             {/* Right side */}
             <div className="flex items-center gap-1">
-              {/* Desktop search */}
-              <div className="hidden md:block">
-                <GlobalSearch />
-              </div>
-              {/* Mobile search icon */}
-              <GlobalSearch mobile />
-
               {/* Theme toggle with circular wipe */}
               {mounted && (
                 <button
