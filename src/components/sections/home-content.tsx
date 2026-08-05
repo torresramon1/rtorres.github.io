@@ -15,19 +15,17 @@ import { TiltCard } from "@/components/interactive/tilt-card";
 
 const ongoingProjects = [
   {
-    title: "AI Privacy & Regulation Study",
-    collaborators: ["RANDLab (UCSC)", "Stanford University"],
-    summary: "How do practitioners navigate privacy when building AI products under emerging regulations?",
+    title: "Tor Sustainability",
+    collaborators: ["RANDLab (UCSC)"],
+    summary: "Measuring the Carbon footprint of Tor and making it carbon efficient with carbon aware routing.",
     highlights: [
-      "Confidential one-hour interviews with industry professionals",
-      "Covering the EU AI Act, CCPA, GDPR, and evolving US state laws",
-      "Participants span privacy, compliance, engineering, and risk roles",
-      "Centering practitioner experience to inform policy recommendations",
+      "Measuring Tor's carbon footprint",
+      "Carbon aware routing",
     ],
-    status: "Recruiting Participants",
-    tags: ["AI Governance", "Privacy", "Regulation", "Practitioner Study"],
-    link: "https://randlab.engineering.ucsc.edu/aigov-study/",
-    irb: "UC Santa Cruz IRB HS-FY2026-108",
+    status: "In Progress",
+    tags: ["Tor", "Sustainability", "Privacy", "Networks"],
+    link: "",
+    irb: "",
   },
 ];
 
