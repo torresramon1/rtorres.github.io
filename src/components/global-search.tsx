@@ -18,11 +18,11 @@ const staticPages: SearchResult[] = [
   { title: "Home", description: "Main page and bio", href: "/", type: "Page", icon: FileText },
   { title: "Publications", description: "All peer-reviewed publications", href: "/publications", type: "Page", icon: FileText },
   { title: "Teaching", description: "Teaching experience at Dartmouth", href: "/teaching", type: "Page", icon: GraduationCap },
-  { title: "Service & Outreach", description: "Professional service and community contributions", href: "/service", type: "Page", icon: FileText },
-  { title: "Recognition", description: "Fellowships and media coverage", href: "/recognition", type: "Page", icon: FileText },
-  { title: "My Journey", description: "Timeline and personal story", href: "/journey", type: "Page", icon: FileText },
+  //{ title: "Service & Outreach", description: "Professional service and community contributions", href: "/service", type: "Page", icon: FileText },
+  //{ title: "Recognition", description: "Fellowships and media coverage", href: "/recognition", type: "Page", icon: FileText },
+  //{ title: "My Journey", description: "Timeline and personal story", href: "/journey", type: "Page", icon: FileText },
   { title: "CV", description: "Curriculum Vitae", href: "/cv", type: "Page", icon: FileText },
-  { title: "Blog", description: "Research notes and tutorials", href: "/blog", type: "Page", icon: PenLine },
+  //{ title: "Blog", description: "Research notes and tutorials", href: "/blog", type: "Page", icon: PenLine },
   { title: "News", description: "Latest research updates", href: "/news", type: "Page", icon: Newspaper },
 ];
 
