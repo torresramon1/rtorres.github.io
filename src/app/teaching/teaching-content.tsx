@@ -27,7 +27,7 @@ export function TeachingContent() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <PageHeader
           title="Teaching"
-          description="Courses, teaching philosophy, and classroom experience."
+          description="Courses and classroom experience."
         />
 
         {/* Teaching */}
@@ -62,47 +62,6 @@ export function TeachingContent() {
               </div>
             ))}
           </section>
-        </FadeIn>
-
-        {/* Teaching Philosophy */}
-        <FadeIn direction="none" delay={0.1}>
-          <section className="mb-16">
-            <h2 className="font-serif text-xl font-semibold tracking-tight mb-6 pb-2 border-b border-border">
-              Teaching Philosophy
-            </h2>
-            <div className="space-y-4 text-sm text-foreground-secondary leading-relaxed max-w-prose">
-              {/* TODO: Replace with your own teaching philosophy */}
-              <p>
-                YOUR_TEACHING_PHILOSOPHY_PARAGRAPH_1
-              </p>
-              <p>
-                YOUR_TEACHING_PHILOSOPHY_PARAGRAPH_2
-              </p>
-            </div>
-
-            {/* TODO: Replace with a real student quote, or remove this block */}
-            <div className="my-10 py-8 px-6 text-center">
-              <blockquote className="font-serif italic text-lg sm:text-xl text-foreground-secondary mb-4 max-w-lg mx-auto">
-                &ldquo;YOUR_STUDENT_QUOTE&rdquo;
-              </blockquote>
-              <p className="font-mono text-xs text-foreground-quaternary tracking-wide">
-                — YOUR_QUOTE_ATTRIBUTION {/* TODO: e.g. "Student feedback, Spring 2025" */}
-              </p>
-            </div>
-          </section>
-        </FadeIn>
-
-        {/* CTA */}
-        <FadeIn direction="none" delay={0.2}>
-          <div className="flex flex-col sm:flex-row items-center gap-4 text-sm">
-            {/* TODO: Update this link or remove it */}
-            <a
-              href={`mailto:${siteConfig.email}`}
-              className="link-accent font-medium"
-            >
-              Discuss collaboration
-            </a>
-          </div>
         </FadeIn>
       </div>
     </div>
