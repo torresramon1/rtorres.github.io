@@ -17,14 +17,6 @@ export function Footer() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex flex-col items-center gap-5 text-center">
-          {/* Collaboration CTA */}
-          <p className="text-sm text-foreground-secondary">
-            Open to collaboration.{" "}
-            <a href={`mailto:${siteConfig.email}`} className="gradient-link">
-              Get in touch
-            </a>
-            .
-          </p>
 
           {/* Social links — text only */}
           <nav
