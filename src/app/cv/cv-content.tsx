@@ -30,6 +30,7 @@ const experience = [
     title: "CSE 150 TA", // TODO: e.g. "Research Intern"
     organization: "University of California, Santa Cruz", // TODO: e.g. "Example Lab"
     period: "Sep 2025 - Dec 2025", // TODO: e.g. "Jun 2023 - Aug 2023"
+    location: "Santa Cruz, CA",
     description: "Led weekly lab sections and guided students through hands-on networking assignments", // TODO: brief description of your responsibilities/contributions
   },
 ];
