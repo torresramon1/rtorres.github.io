@@ -15,7 +15,7 @@ export const siteConfig = {
   phone: "YOUR_PHONE", // TODO: e.g. "+1 (555) 000-0000" — remove this field if you don't want to show it
   social: {
     email: "rtorre25@ucsc.edu", // TODO: same as email above
-    github: "https://github.com/rtorre32", // TODO: your GitHub URL
+    github: "https://github.com/torresramon1", // TODO: your GitHub URL
     linkedin: "https://linkedin.com/in/ramonTorres25", // TODO: your LinkedIn URL
     twitter: "https://twitter.com/YOUR_TWITTER_HANDLE", // TODO: your Twitter/X URL — remove if unused
     googleScholar: "https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID", // TODO: your Google Scholar URL — remove if unused
