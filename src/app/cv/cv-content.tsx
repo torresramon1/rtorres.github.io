@@ -108,8 +108,8 @@ export function CVContent() {
               </a>
               <span>{siteConfig.location.city}</span>
               {/* TODO: update or remove this website link */}
-              <a href="https://YOUR_WEBSITE_URL" className="link-accent">
-                YOUR_WEBSITE_URL
+              <a href="https://rtorres.io" className="link-accent">
+                rtorres.io
               </a>
             </div>
           </div>
