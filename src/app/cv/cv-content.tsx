@@ -6,26 +6,31 @@ import { Button } from "@/components/ui/button";
 import { PageHeader } from "@/components/page-header";
 import { FadeIn, StaggerChildren, StaggerItem } from "@/components/animations/fade-in";
 import { siteConfig } from "@/data/site-config";
+import { ongoingProjects } from "@/data/projects";
 
 // TODO: Fill in your education history. Add or remove objects as needed.
 const education = [
   {
-    degree: "YOUR_DEGREE", // TODO: e.g. "Ph.D. in Computer Science"
-    institution: "YOUR_INSTITUTION", // TODO: e.g. "University of Example"
-    period: "YYYY - Present", // TODO: e.g. "Sep 2022 - Present"
-    advisor: "YOUR_ADVISOR", // TODO: e.g. "Prof. Jane Doe" — set to null if no advisor
-    focus: "YOUR_FOCUS", // TODO: e.g. "Machine Learning & Computer Vision"
+    degree: "Ph.D. in Computer Science", // TODO: e.g. "Ph.D. in Computer Science"
+    institution: "Universiy of California, Santa Cruz", // TODO: e.g. "University of Example"
+    period: "2026 - Present", // TODO: e.g. "Sep 2022 - Present"
+    advisor: "Ramakrishnan Sundara Raman", // TODO: e.g. "Prof. Jane Doe" — set to null if no advisor
+    focus: "Networky Security, Privacy, Censorship circumvention", // TODO: e.g. "Machine Learning & Computer Vision"
+  },
+  {
+	degree: "BS in Computer Science",
+	institution: "California Polytechnic State University, San Luis Obispo",
+	period: "2022-2024",
   },
 ];
 
 // TODO: Fill in your work/research experience. Add or remove objects as needed.
 const experience = [
   {
-    title: "YOUR_ROLE", // TODO: e.g. "Research Intern"
-    organization: "YOUR_ORGANIZATION", // TODO: e.g. "Example Lab"
-    period: "Mon YYYY - Mon YYYY", // TODO: e.g. "Jun 2023 - Aug 2023"
-    location: "YOUR_LOCATION", // TODO: e.g. "City, ST" — remove field if remote
-    description: "YOUR_DESCRIPTION", // TODO: brief description of your responsibilities/contributions
+    title: "CSE 150 TA", // TODO: e.g. "Research Intern"
+    organization: "University of California, Santa Cruz", // TODO: e.g. "Example Lab"
+    period: "Sep 2025 - Dec 2025", // TODO: e.g. "Jun 2023 - Aug 2023"
+    description: "Led weekly lab sections and guided students through hands-on networking assignments", // TODO: brief description of your responsibilities/contributions
   },
 ];
 
@@ -37,16 +42,6 @@ const presentations = [
     location: "YOUR_LOCATION", // TODO: e.g. "Vancouver, Canada"
     year: "2024", // TODO: year
     type: "YOUR_TYPE", // TODO: e.g. "Conference Talk" or "Workshop Talk" or "Poster"
-  },
-];
-
-// TODO: Fill in current/ongoing projects. Add or remove objects as needed.
-const ongoingProjects = [
-  {
-    title: "YOUR_PROJECT_TITLE", // TODO: project name
-    collaborators: "YOUR_COLLABORATORS", // TODO: e.g. "Example University & Partner Org"
-    description: "YOUR_PROJECT_DESCRIPTION", // TODO: what the project is about
-    link: "https://YOUR_PROJECT_URL", // TODO: project page URL — remove field if none
   },
 ];
 
@@ -157,7 +152,7 @@ export function CVContent() {
               <StaggerItem key={project.title}>
                 <div>
                   <h3 className="text-sm font-medium">
-                    {"link" in project && project.link ? (
+                    {project.link ? (
                       <a href={project.link} target="_blank" rel="noopener noreferrer" className="link-accent">
                         {project.title}
                       </a>
@@ -165,8 +160,8 @@ export function CVContent() {
                       project.title
                     )}
                   </h3>
-                  <p className="text-sm text-foreground-secondary">{project.collaborators}</p>
-                  <p className="text-sm text-foreground-tertiary mt-1">{project.description}</p>
+                  <p className="text-sm text-foreground-secondary">{project.collaborators.join(", ")}</p>
+                  <p className="text-sm text-foreground-tertiary mt-1">{project.summary}</p>
                 </div>
               </StaggerItem>
             ))}

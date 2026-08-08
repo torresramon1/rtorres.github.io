@@ -5,29 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
+import { ongoingProjects } from "@/data/projects";
 import { FadeIn } from "@/components/animations/fade-in";
 import { motion, useReducedMotion } from "framer-motion";
 import { TiltCard } from "@/components/interactive/tilt-card";
-
-/* ─────────────────────────────────────────
-   DATA
-   ───────────────────────────────────────── */
-
-const ongoingProjects = [
-  {
-    title: "Tor Sustainability",
-    collaborators: ["RANDLab (UCSC)"],
-    summary: "Measuring the Carbon footprint of Tor and making it carbon efficient with carbon aware routing.",
-    highlights: [
-      "Measuring Tor's carbon footprint",
-      "Carbon aware routing",
-    ],
-    status: "In Progress",
-    tags: ["Tor", "Sustainability", "Privacy", "Networks"],
-    link: "",
-    irb: "",
-  },
-];
 
 /* ─────────────────────────────────────────
    SECTION HEADING WITH "VIEW ALL" LINK
