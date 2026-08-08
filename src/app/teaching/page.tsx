@@ -4,11 +4,11 @@ import { TeachingContent } from "./teaching-content";
 export const metadata: Metadata = {
   title: "Teaching",
   description:
-    "Teaching experience and courses by Mohamed Dawoud in security and privacy.",
+    "Teaching experience and courses by Ramon Torres in networks, security and privacy.",
   alternates: { canonical: "/teaching" },
   openGraph: {
-    title: "Teaching | Mohamed Dawoud",
-    description: "Teaching experience and courses by Mohamed Dawoud in security and privacy.",
+    title: "Teaching | Ramon Torres",
+    description: "Teaching experience and courses by Ramon Torres in networks, security and privacy.",
     url: "/teaching",
   },
 };

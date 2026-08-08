@@ -7,15 +7,16 @@ import { siteConfig } from "@/data/site-config";
 // TODO: Add your courses here. Add or remove objects as needed.
 const courses = [
   {
-    semester: "YOUR_SEMESTER", // TODO: e.g. "Spring 2025"
-    role: "YOUR_ROLE", // TODO: e.g. "Lead Graduate Teaching Assistant" or "Instructor"
-    code: "YOUR_COURSE_CODE", // TODO: e.g. "CS 101"
-    title: "YOUR_COURSE_TITLE", // TODO: e.g. "Introduction to Programming"
-    institution: "YOUR_INSTITUTION", // TODO: e.g. "University of Example"
-    instructor: "YOUR_INSTRUCTOR", // TODO: e.g. "Prof. Jane Doe" — remove field if you were the instructor
+    semester: "Fall 2025", // TODO: e.g. "Spring 2025"
+    role: "Teaching Assistant", // TODO: e.g. "Lead Graduate Teaching Assistant" or "Instructor"
+    code: "CSE 150", // TODO: e.g. "CS 101"
+    title: "Introduction to Computer Networks", // TODO: e.g. "Introduction to Programming"
+    institution: "University of California, Santa Cruz", // TODO: e.g. "University of Example"
+    instructor: "Prof. Christina Parsa", // TODO: e.g. "Prof. Jane Doe" — remove field if you were the instructor
     highlights: [
-      "YOUR_HIGHLIGHT_1", // TODO: bullet point describing what you did or taught
-      "YOUR_HIGHLIGHT_2",
+      "Led weekly lab sections, guided students through hands-on networking assignments.", // TODO: bullet point describing what you did or taught
+      "Held regular office hours to support student understanding of course material.",
+      "Graded exams and lab assignments, provided feedback aligned with course objectives.",
     ],
   },
 ];
