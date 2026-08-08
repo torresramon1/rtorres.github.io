@@ -4,11 +4,11 @@ import { NewsContent } from "./news-content";
 export const metadata: Metadata = {
   title: "News",
   description:
-    "Latest news and updates from Mohamed Dawoud's research in security, privacy, and AI governance.",
+    "Latest news and updates from Ramon Torres' research in security, privacy, and censorship circumvention.",
   alternates: { canonical: "/news" },
   openGraph: {
-    title: "News | Mohamed Dawoud",
-    description: "Latest news and updates from Mohamed Dawoud's research in security, privacy, and AI governance.",
+    title: "News | Ramon Torres",
+    description: "Latest news and updates from Ramon Torres' research in security, privacy, and AI governance.",
     url: "/news",
   },
 };
