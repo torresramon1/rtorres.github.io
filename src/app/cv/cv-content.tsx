@@ -68,7 +68,7 @@ export function CVContent() {
   return (
     <div className="pt-20 pb-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <PageHeader title="Curriculum Vitae" description="Last updated: TODO_MONTH YYYY"> {/* TODO: update date */}
+        <PageHeader title="Curriculum Vitae" description="Last updated: Aug 2026">
           <div className="flex gap-2 mt-4 print:hidden">
             <Button size="sm" onClick={() => window.print()}>
               <Download className="mr-2 h-4 w-4" />
