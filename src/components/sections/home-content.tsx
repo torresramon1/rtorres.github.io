@@ -217,27 +217,6 @@ export function HomeContent() {
         {/* ── divider ── */}
         <hr className="border-border mb-16" />
 
-        {/* ═══════════════════════════════════════
-            LET'S COLLABORATE
-            ═══════════════════════════════════════ */}
-        <FadeIn direction="none" delay={0.1}>
-          <section className="mb-16" aria-labelledby="section-collaborate">
-            <h2 id="section-collaborate" className="text-xl font-bold tracking-tight mb-3">
-              Let&apos;s Collaborate
-            </h2>
-            <p className="text-sm text-foreground-secondary leading-relaxed mb-5 max-w-xl">
-              I&apos;m always open to collaborations on security, privacy, and AI research.
-              If you have an idea, a dataset, or just want to chat — reach out.
-            </p>
-            <a
-              href={`mailto:${siteConfig.email}`}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border hover:border-accent/30 text-sm font-medium transition-colors duration-150 hover:bg-accent-subtle"
-            >
-              Get in touch <ArrowRight className="h-3.5 w-3.5" />
-            </a>
-          </section>
-        </FadeIn>
-
       </div>
     </div>
   );
